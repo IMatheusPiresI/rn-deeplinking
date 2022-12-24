@@ -1,6 +1,13 @@
 export default {
-  prefixes: ['floox.app.bitimatrix://'],
+  prefixes: ['pokeapp.linkedin://'],
   config: {
-    screens: {},
+    screens: {
+      Home: {
+        path: 'home',
+      },
+      Pokemon: {
+        path: 'pokemon/:id',
+      },
+    },
   },
 };
