@@ -8,7 +8,11 @@ const Stack = createNativeStackNavigator();
 
 export const StackRoutes = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        gestureEnabled: true,
+      }}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Pokemon" component={Pokemon} />
       <Stack.Screen name="Authentication" component={Authentication} />

@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import 'react-native-gesture-handler';
 
 import {useNavigation} from '@react-navigation/native';
 import {Linking} from 'react-native';
-import {StackRoutes} from './routes/Stack';
 import {useUserContext} from './context/authContext';
+import {MyTabs} from './routes/Tabs';
 
 const App = () => {
   const navigation = useNavigation();
@@ -21,6 +22,7 @@ const App = () => {
 
     if (user) {
       if (linking) {
+        console.log('aqui');
         Linking.openURL(linking);
         return;
       }
@@ -31,7 +33,7 @@ const App = () => {
     navigation.navigate('Authentication');
   }, [linking, navigation, user]);
 
-  return <StackRoutes />;
+  return <MyTabs />;
 };
 
 export default App;
