@@ -1,8 +1,8 @@
 import {LinkingOptions} from '@react-navigation/native';
 
 type ParamList = {
-  Home: unknown;
-  AppRoutes: any;
+  Home: undefined;
+  AppRoutes: undefined;
 };
 
 const linking: LinkingOptions<ParamList> = {

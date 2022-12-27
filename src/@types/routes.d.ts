@@ -1,11 +1,7 @@
 export declare global {
   namespace ReactNavigation {
     interface RootParamList {
-      AppRoutes: {
-        screens: {
-          Pokemon: {id: string};
-        };
-      };
+      AppRoutes: undefined;
       Authentication: undefined;
       Home: undefined;
       Pokemon: {id: string};
